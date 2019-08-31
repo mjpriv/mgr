@@ -40,7 +40,7 @@ end
 m_space = metric.impl.ExplicitMetricSpace(D);
 stream = api.Plex4.createVietorisRipsStream(m_space, max_dimension, max_filtration_value, num_divisions);
 stream.finalizeStream();
-fprintf('SIFTS: Rips complex size=%d\n',stream.getSize());
+fprintf('SIFTS: Rips complex size=%d\n' % stream.getSize());
 
 % get persistence algorithm over Z/2Z
 persistence = api.Plex4.getModularSimplicialAlgorithm(max_dimension, 2);
